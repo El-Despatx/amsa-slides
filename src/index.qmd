@@ -8,10 +8,10 @@ toc: false
 
 ## 🎓 Slides
 
-Welcome to **AMSA 2025-2026**, here you’ll find all the lecture slides and resources.
+Welcome to **AMSA 2026-2027**, here you’ll find all the lecture slides and resources.
 
 -   [Week 0: Introduction + Exercises workflow](weeks/week-0.qmd)
--   [Week 1: System boot intro + PRAC 1](weeks/week-1.qmd)
+<!-- -   [Week 1: System boot intro + PRAC 1](weeks/week-1.qmd)
 -   [Week 2: Linux syscalls, processes and ProcFS + PRAC 2.1](weeks/week-2.qmd)
 -   [Week 3: Scheduling and nice + PRAC 2.2](weeks/week-3.qmd)
 -   [Week 4: Communicating processes + PRAC 2.3](weeks/week-4.qmd)
@@ -22,24 +22,24 @@ Welcome to **AMSA 2025-2026**, here you’ll find all the lecture slides and res
 -   [Week 10: Dockerfile & DockerHub](weeks/week-10.qmd)
 -   [Week 11: Docker Compose: Orchestrating containers](weeks/week-11.qmd)
 -   [Week 12: AWS Intro and services](weeks/week-12.qmd)
--   [Week 13: AWS RDS](weeks/week-13.qmd)
+-   [Week 13: AWS RDS](weeks/week-13.qmd) -->
 
 ## 📝 Activities
 
 In the following links you'll find all the activities and its corresponding resources.
 
--   [Activity 1: Booting & systemd](activities/act-1.qmd)
+<!-- -   [Activity 1: Booting & systemd](activities/act-1.qmd)
 -   [Activity 2: Creating our own htop!](activities/act-2.qmd)
 -   [Activity 3: SWAP, tmpfs & Quotas](activities/act-3.qmd)
--   [Activity 4: Docker & AWS](activities/act-4.qmd)
+-   [Activity 4: Docker & AWS](activities/act-4.qmd) -->
 
 ## 🤓 Extras
 
-The following are completely optional activities and won't be scored (only for those extra points). Not completing this activities is not going to penalize you in any way.
+The following are completely optional activities and won't be scored. Not completing this activities is not going to penalize you in any way.
 
 Having said that, we encourage you to give it a try and show us the results, we'll be more than happy to have a look and discuss any doubts!
 
--   [Week 1: Playing with tetris (and boot configs!)](weeks/week-1.qmd#extra)
+<!-- -   [Week 1: Playing with tetris (and boot configs!)](weeks/week-1.qmd#extra)
 -   [Week 2: Create your own syscall](weeks/week-2.qmd#extra)
 -   [Week 3: Implement your own `nice` in python](weeks/week-3.qmd#extra)
 -   [Week 4: Modify handlers and implement `nohup` in python](weeks/week-4.qmd#extra)
@@ -50,18 +50,18 @@ Having said that, we encourage you to give it a try and show us the results, we'
 -   [Week 10: Dockerfile extras](weeks/week-10.qmd#extra)
 -   [Week 11: Docker Compose extras](weeks/week-11.qmd#extra)
 -   [Week 12: AWS Intro and services](weeks/week-12.qmd#extra)
--   [Week 13: Create your own lambda](weeks/week-13.qmd#extra)
+-   [Week 13: Create your own lambda](weeks/week-13.qmd#extra) -->
 
 ## 📚 Resources
 
--   [Guia docent](https://guiadocent.udl.cat/html/2025-26_102013)
--   [Docker Commands](resources/docker.qmd)
+-   [Guia docent](https://guiadocent.udl.cat/html/2026-27_102013)
+<!-- -   [Docker Commands](resources/docker.qmd)
 -   [AWS Academy Lab Steps](resources/aws_academy.qmd)
 -   [AWS Cli Auth](resources/aws_cli.qmd)
--   [January Exam Reference](resources/exam_jan.qmd)
+-   [January Exam Reference](resources/exam_jan.qmd) -->
 
 ## 👴🏻👵🏻📚 Previous Class Resources
 
 -   [Python Resources for Beginners](resources/python.qmd)
 -   [Setting up the subject's virtual machine and git brief](resources/vm_git.qmd)
--   [November Exam Reference](resources/exam.qmd)
+<!-- -   [November Exam Reference](resources/exam.qmd) -->

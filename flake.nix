@@ -1,5 +1,5 @@
 {
-  description = "AMSA 25-26 slides";
+  description = "AMSA 26-27 slides";
 
   inputs.nixpkgs = {
     url = "github:nixos/nixpkgs/nixos-unstable?shallow=1";
@@ -40,7 +40,7 @@
         name = s;
         value = { default = let pkgs = sysPkgs.${s}; in pkgs.stdenv.mkDerivation {
           pname = "amsa-slides";
-          version = "2025.2026.v1";
+          version = "2026.2027.v1";
           src = ./src;
           buildInputs = [ pkgs.quarto pkgs.which pkgs.pandoc pkgs.fontconfig pkgs.chromium (pkgs.texlive.combine {
             inherit (pkgs.texlive) scheme-medium collection-latexextra xcolor;
