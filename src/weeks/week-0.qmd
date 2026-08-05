@@ -6,7 +6,7 @@ format: revealjs
 
 # Before getting started 🫷
 
--   Visit the subject lab's [website](https://amsa.lol), there you'll find a **link to download** a Virtual Machine under the **Resources** section. It will download a `.ova` file.
+-   Visit the subject lab's [website](https://lleida.amsa.udl.cat), there you'll find a **link to download** a Virtual Machine under the **Resources** section. It will download a `.ova` file.
 -   We'll get into what that is and its purpose on this course, but since its quite a **large file (\~5GB)**, go on and **start the download** so we can get hands-on later on today's session.
 
 # Goals for today 🎯
@@ -70,7 +70,6 @@ This sessions are structured in **two parts**:
 
 -   It is a **recommended pace**
 -   Each sub-delivery is submitted through the **Virtual Campus** (just provide a **link to your GitHub repo**)
--   **Extra points** for those who keep up with the pace
 
 ::: {.callout-warning .fragment}
 Not following the sub-deadlines **never penalizes you**. They are only meant to help you stay on track.
@@ -153,19 +152,6 @@ We **strongly recommend** doing them **individually**.
 
 ::: {.callout-warning .fragment}
 While we acknowledge that ChatGPT can be a useful tool, **relying on AI to generate the code** for the assignments without understanding the underlying concepts **will lead to failing the subject**, and you will not be able to answer the exam questions.
-:::
-
-## Extra points ⚡️
-
-There are an additional 0.5 points in this subject (up to 10.5 points) To get these points you can:
-
--   Attend classs
--   Contribute to class being active
--   Do extra activities
--   Find flaws in our notes and contribute via PR to fix them
-
-::: fragment
-We will assign those points in function of these things.
 :::
 
 # Content overview 🎓
