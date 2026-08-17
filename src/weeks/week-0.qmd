@@ -59,29 +59,16 @@ This sessions are structured in **two parts**:
 ### Delivery and follow-up of activities
 
 -   There will be a total of **4 activities**
--   Each activity is divided into **sub-deliveries**
+-   Each delivery will be submitted through the **Virtual Campus** (providing a **link to your GitHub repo**)
 -   **Evaluation:**
-    -   Done **only at the final deadline** of the full activity
-    -   The actual content is graded at that point
-
-------------------------------------------------------------------------
-
-### Sub-deliveries
-
--   It is a **recommended pace**
--   Each sub-delivery is submitted through the **Virtual Campus** (just provide a **link to your GitHub repo**)
-
-::: {.callout-warning .fragment}
-Not following the sub-deadlines **never penalizes you**. They are only meant to help you stay on track.
-:::
+    -   Done **only at the final deadline** of the activity
+    -   We will grade the deliverables of these activities, as well as helping the class to be dynamic and interactive, and to **follow your pace**.
 
 ------------------------------------------------------------------------
 
 ## Timeline
 
-We will follow 4 main practices (**PRAC-1 … PRAC-4**) divided into sub-deliveries.
-
-Only the **final delivery** of each practice is graded.
+We will follow 4 main practices (**PRAC-1 … PRAC-4**).
 
 ::: {.callout-note .fragment}
 #### Doubt sessions {.unnumbered .unlisted}
@@ -97,13 +84,13 @@ We may give you an extra week for final deliveries so we can have doubt sessions
 |------------------------|-----------------------------------------------|
 | **0** | 📖 Subject **Intro** |
 | **1** | 📖 Explain **PRAC-1** |
-| **2** | 📖 Explain **PRAC-2.1** ➝ 📤 Deliver **PRAC-1** *(Final PRAC-1)*🏆 |
-| **3** | 📖 Explain **PRAC-2.2** ➝ 📤 Deliver **PRAC-2.1** |
-| **4** | 📖 Explain **PRAC-2.3** ➝ 📤 Deliver **PRAC-2.2** |
-| **5** | 📖 Explain **PRAC-3.1** ➝ 📤 Deliver **PRAC-2.3** *(Final PRAC-2)*🏆 |
-| **6** | 📖 Explain **PRAC-3.2** ➝ 📤 Deliver **PRAC-3.1** |
-| **7** | 📖 Explain **PRAC-3.3** ➝ 📤 Deliver **PRAC-3.2** |
-| **8** | 📝 Exams ➝ 📤 Deliver **PRAC-3.3** *(Final PRAC-3)*🏆 |
+| **2** | 📖 Explain **PRAC-2.1** ➝ 📤 Deliver **PRAC-1** 🏆 |
+| **3** | 📖 Explain **PRAC-2.2 & PRAC-2.3 **  |
+| **4** | 📖 Explain **PRAC-3.1** ➝ 📤 Deliver **PRAC-2** 🏆 |
+| **5** | 📖 Explain **PRAC-3.2**   |
+| **6** | 📤 Deliver **PRAC-3** 🏆   |
+| **7** | 📝 Competencial exam |
+| **8** | 📝 Exams week |
 
 ------------------------------------------------------------------------
 
@@ -111,14 +98,14 @@ We may give you an extra week for final deliveries so we can have doubt sessions
 
 | Week      | Contents                                          |
 |-----------|---------------------------------------------------|
-| **9**     | 📖 **Virtualization & Containers** intro          |
-| **10**    | 📖 Explain **PRAC-4.1**                           |
-| **11**    | 📖 Explain **PRAC-4.2** ➝ 📤 Deliver **PRAC-4.1** |
-| **12**    | 📖 **AWS Intro** ➝ 📤 Deliver **PRAC-4.2**        |
-| **13**    | 📖 Explain **PRAC-4.3**                           |
-| **14**    | 📖 Explain **PRAC-4.4** ➝ 📤 Deliver **PRAC-4.3** |
-| **15**    | 📤 Deliver **PRAC-4.4** *(Final PRAC-4)*🏆        |
-| **16–17** | 📝 **Final Exams**                                |
+| **9**     | 📖 **Virtualization & Containers** intro, explain **PRAC-4.1**           |
+| **10**    | 📖 Explain **PRAC-4.2**                             |
+| **11**    | 📖 **AWS Intro** ➝                                |
+| **12**    | 📖 Explain **PRAC-4.3**                           |
+| **13**    | 📖 Explain **PRAC-4.4**                          |
+| **13.5**    | ❓ Doubt session                          |
+| **14** | 📝 Competencial exam ➝ 📤 Deliver **PRAC-4** 🏆 |
+| **15–17** | 📝 **Final exams week**                                |
 
 ## Final score breakdown {.smaller}
 
@@ -126,9 +113,7 @@ We may give you an extra week for final deliveries so we can have doubt sessions
 :::: {.column .fragment width="50%"}
 ::: callout-note
 #### **Activities** → 10%
-
--   PRAC-1 → **1%**
--   PRAC-2 + PRAC-3 + PRAC-4 → **3% each**
+Graded between the 4 activities.
 :::
 ::::
 
@@ -136,13 +121,17 @@ We may give you an extra week for final deliveries so we can have doubt sessions
 ::: callout-note
 #### **Exams** → 90%
 
--   Theory questions → **75%**
--   Lab-related questions → **25%**
+-   First competencial exam (of the deliverables, prior to the exams week) → **25%**
+-   First theory exam (during the exams week)→ **20%**
+-   Second competencial exam (of the deliverables, prior to the exams week) → **25%**
+-   Second theory exam (during the exams week)→ **20%**
 :::
 ::::
 :::::::
 
 ::: {.callout-important .fragment}
+Exams this year as competencial exams, which will be done a week prior to the exams week.
+You will do the exam in a classroom, and they will be done with the university's computers.
 Activites can be done in **groups of two** and **cannot be retaken**.
 
 If you do work in groups, we will require **both members of the group to have commited** in the repo of the assignment.
@@ -168,7 +157,7 @@ We will explore **system administration** and **application maintenance** throug
 -   Process management\
 -   Scheduling & priorities\
 -   Signals & sessions\
--   Memory (SWAP, tmpfs, quotas)\
+-   Memory (SWAP & tmpfs)\
 :::
 
 ::: {.column .fragment width="50%"}
@@ -194,11 +183,11 @@ We will explore **system administration** and **application maintenance** throug
 | 0    | Start & setup           | VM + GitHub access                  |
 | 1    | Booting & systemd       | `journalctl` print, service, script |
 | 2    | Process types           | `/proc` exploration                 |
-| 3    | Scheduling & priorities | filtering `/proc` with `awk`        |
-| 4    | Signals                 | mini-htop                           |
-| 5    | SWAP                    | swap manager script + C program     |
-| 6    | TMPFS & benchmarking    | tmpfs vs ext4 benchmark             |
-| 7    | Quotas                  | user quotas on tmpfs + benchmarks   |
+| 3    | Scheduling, priorities and signals | Mini-htop        |
+| 4    | SWAP                    | swap manager script + C program     |
+| 5    | TMPFS & benchmarking    | tmpfs vs ext4 benchmark             |
+| 6    | Wrap-up session | Doubts & Exam preparation             |
+| 7    | Competencial exam                  | Time to prove your worth |
 
 ------------------------------------------------------------------------
 
@@ -206,19 +195,21 @@ We will explore **system administration** and **application maintenance** throug
 
 <br>
 
-| Week | Focus                        | Tasks                        |
-|------|------------------------------|------------------------------|
-| 9    | Virtualization vs containers | Install Docker/Podman        |
-| 10   | OCI Images                   | Dockerfile + push image      |
-| 11   | Compose + Postgres           | `docker-compose` + intro K8s |
-| 12   | AWS intro                    | services overview            |
-| 13   | Lambdas + Gateway            | serverless setup             |
-| 14   | PostgreSQL                   | configure DB + tables        |
-| 15   | Wrap-up & evaluation         | final submissions            |
+| Week | Focus                                           | Tasks                                                       |
+|------|-------------------------------------------------|-------------------------------------------------------------|
+| 9    | Virtualization vs containers, OCI Images        | Install Docker/Podman, create Dockerfile + push image        |
+| 10   | Compose + Postgres                              | `docker-compose` + intro K8s                                |
+| 11   | AWS intro                    | services overview            |
+| 12   | Lambdas + Gateway            | serverless setup             |
+| 13   | PostgreSQL + Doubts                   | configure DB + tables        |
+| 13.5   | Extra doubt session (if needed)                  |       |
+| 14    | Competencial exam                  | Time to prove your worth |
 
 # Working on the activities 🤓
 
 ## Github classroom {.smaller}
+
+PABLO's job
 
 We will be using [**GitHub Classroom**](https://classroom.github.com) to deliver and evaluate all activities.
 
