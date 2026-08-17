@@ -6,3 +6,5 @@ _site
 src/.quarto
 .direnv
 src/site_libs/**/*
+.idea/
+.vscode/
