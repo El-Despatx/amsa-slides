@@ -207,21 +207,21 @@ We will explore **system administration** and **application maintenance** throug
 
 # Working on the activities 🤓
 
-## Github classroom {.smaller}
+## AMSA-26-27 Github's Organization{.smaller}
 
-PABLO's job
+We're using [**GitHub Classroom**](https://classroom.github.com) for our assignments. However, Microsoft has decided to [kill it....](https://github.com/orgs/community/discussions/196615), and we haven't really had enough time to migrate to a new alternative yet.
 
-We will be using [**GitHub Classroom**](https://classroom.github.com) to deliver and evaluate all activities.
+So, for now, we'll be using [GitHub](https://github.com/) in the "normal" way, through a GitHub organization.
 
--   Each student will receive a **private GitHub repository** for every activity
-    -   Only you and the instructors will have access to it
-    -   The repo will include an **initial template** where you will work
--   As you make progress, **push your changes regularly**
-    -   This allows us to follow your pace
-    -   For you, it will feel just like working on a normal GitHub repository
--   At the deadline, the **final content of your repository** will be evaluated
-    -   We check the repo on the official delivery date
-    -   We encourage you to **upload your progress continuously**
+For each assignment, you will:
+
+  1. Access the assignment's public repository and use it as a template to create your own repository.
+  2. When creating your repository, make sure to:
+     - Create it under the **amsa-26-27** organization.
+     - Set its visibility to **Private**, so your classmates cannot see your work.
+  3. That's it! From this point on, you can use the repository just like any other "normal" GitHub repository.
+
+You can find step-by-step instructions, including screenshots, on the [Git resources webpage](/resources/vm_git.qmd).
 
 ## Virtual Machine for the Labs {.smaller}
 
@@ -240,7 +240,7 @@ We will provide you with a **Virtual Machine (VM)** in the form of a `.ova` file
 
 # Lab time! 🧪
 
-## Downaload VirtualBox
+## Download VirtualBox
 
 Visit the VirtualBox download [website](virtualbox.org/wiki/Downloads), download the right variant depending on your OS and start the installation.
 
@@ -272,7 +272,7 @@ Now you should see **a new machine on VirtualBox**, double-click on it and after
 The credentials to login are `username: amsa & password: amsa`
 :::
 
-## Connecting to the machine through ssh {.smaller}
+## Connecting to the machine through ssh (optional) {.smaller}
 
 :::::: columns
 :::: {.column width="50%"}
@@ -294,17 +294,14 @@ You may get prompted regarding the authenticity of the host, just type `yes` and
 :::
 ::::::
 
-## Regarding Github Classroom
+## Create your first assignment project
 
-Try accessing a "test" assignment to check the flow:
+Simulate that we're having an assignment called "github_101". Try to:
 
-::: enumerate
-<!-- -   [Pralab](https://classroom.github.com/a/WPz1MLhd) -->
-- __NOT AVAILABLE ANYMORE__
-:::
+  1) Create your own repository within the amsa-26-27 organization.
+  2) Add a change to it.
+  3) Push it to github.
 
 ::: fragment
-If for some reason you don't have an SSH already configured to work with Github, good news, it's time to grow up.
-
-Github already provides **great documentation** on how to do this, here is the [link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+Be aware that the repository of the "simulated" assignment it's called [github_101](https://github.com/amsa-26-27-lleida/github_101), and that you've instructions for how to fork, clone, and push a repository on the [git guide](/resources/vm_git.qmd)
 :::

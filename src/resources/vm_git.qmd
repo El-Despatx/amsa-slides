@@ -31,7 +31,13 @@ User `amsa` and password `amsa`
 
 As previously stated, we'll be using [Git](https://git-scm.com) and [Github](https://github.com) to complete assignments.
 
-Every time you accept an assignment through Github classroom, a Github repository will be created under your Github account.
+Each time you fork one of our template repositories for an assignment, a new GitHub repository will be created for you within the [AMSA 26–27 organization](https://github.com/amsa-26-27-lleida).
+
+### Create a github account
+
+**You can skip this step if you already have a github account**
+
+Go to [github.com](https://github.com/) and create an account. There’s **no need to use your university email address** (you’ll likely use your GitHub account for personal projects and other work beyond this course).
 
 ### Creating an SSH key to authenticate to Github
 
@@ -49,6 +55,48 @@ cat .ssh/id_ed25519.pub
 // Go onto github.com -> settings -> SSH & GPG keys
 // Add a new authentication key, with any title and the contents of the file you copied
 ```
+
+### Forking the project
+
+To create your own repository for the assignment, you first need to fork the template repository provided by the teachers. Follow these steps:
+
+1) Go to the GitHub page of the organization.
+2) Find the assignment repository you want to work on.
+3) Fork the repository into the organization. Make sure the fork is private and give it a clear, descriptive name that includes your name.
+4) Once the fork has been created, you can clone your repository locally and start working on the assignment.
+
+#### 1) Go to the github page of the organization.
+
+Go to [the github page of the organization](https://github.com/amsa-26-27-lleida). You should see something like this:
+
+![](images/organization_page.png)
+
+#### 2) Go to the repositories section of the organization
+
+![](images/organization_repos.png)
+
+#### 3) Click to the repository you want to fork
+
+For this example, we'll use the "demo" assignment, called `github_101`.
+
+![](images/github_101_repo_page.png)
+
+#### 4) Click on "use this template", and "Create a new repository"
+
+![](images/github_101_fork_button.png)
+
+#### 5) Change the repository to be within the amsa-26-27-lleida organization:
+
+![](images/create_new_repo_change_owner.png)
+
+#### 6) Add a name, and put it private.
+You **must** name it as: {name_of_the_assignment}\_{your_name}\_{your_surname}.
+
+![](images/create_new_repo_already_changed.png)
+
+#### 7) Finally, you've your repo!
+
+![](images/repo_created.png)
 
 ### Cloning the project
 
