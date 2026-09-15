@@ -117,7 +117,7 @@ Graded between the 4 activities.
 :::
 ::::
 
-:::: {.column .fragment width="50%"}
+:::: {.column .fragment width="50%" }
 ::: callout-note
 #### **Exams** → 90%
 
@@ -293,6 +293,11 @@ You may get prompted regarding the authenticity of the host, just type `yes` and
 ![](figures/week-0/ssh-vbox.png){fig-align="center" width="100%"}
 :::
 ::::::
+
+## Join the Github organization
+Scan the following QR code and type your username to be sent an invite to the Github organization
+![](figures/week-0/qr.png){width="40%"  style="display:block; margin:auto;"}
+Or use [this link](https://githuborganizationadderdeploy.vercel.app)
 
 ## Create your first assignment project
 
