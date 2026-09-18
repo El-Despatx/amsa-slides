@@ -121,10 +121,10 @@ Graded between the 4 activities.
 ::: callout-note
 #### **Exams** → 90%
 
--   First competencial exam (of the deliverables, prior to the exams week) → **25%**
--   First theory exam (during the exams week)→ **20%**
--   Second competencial exam (of the deliverables, prior to the exams week) → **25%**
--   Second theory exam (during the exams week)→ **20%**
+-   First competencial exam (of the deliverables, prior to the exams week) → **20%**
+-   First theory exam (during the exams week)→ **25%**
+-   Second competencial exam (of the deliverables, prior to the exams week) → **20%**
+-   Second theory exam (during the exams week)→ **25%**
 :::
 ::::
 :::::::
