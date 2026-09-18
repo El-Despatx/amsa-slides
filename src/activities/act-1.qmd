@@ -23,7 +23,7 @@ Do it with any language you prefer, although bash is probably the simpliest one.
 
 ## What to send?
 
-_Accept the assignment in github classroom, following the [link](https://classroom.github.com/a/JMYxxJG9)_
+_Fork the template of the assignment in Github, following the [link](https://github.com/amsa-26-27-lleida/booting_systemd)_
 
 To complete this activity, you must deliver **a link to your Github repository**, which will contain:
 
