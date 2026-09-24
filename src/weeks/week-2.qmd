@@ -21,7 +21,7 @@ format: revealjs
 
 -   The CPU does instruction, one at a time, [with the fetch decode execute cycle](https://www.youtube.com/watch?v=ctjnYgCo8Bc).
 
--   [You can simulate a sum](https://www.bit-machine.co.uk/machine.html) with the following instructions:
+-   [You can simulate a sum](https://bit-byte-bit.com/bit-Machine/machine.html) with the following instructions:
 
     ![](figures/week-2/instructions.png){fig-align="center" width="60%"}
 
@@ -144,7 +144,7 @@ int 0x80        ; interrupt! Number 128 (0x80 in hex)
 :::::
 
 ::: {.callout-tip .fragment}
-Since the Linux Kernel 2.6, it supports the syscall instruction instead of doing an interrupt 128 (0x80) for syscalls. You can [read more here](https://scribe.rip/@sachinrajakaruna95/exploring-the-evolution-of-system-call-mechanisms-in-linux-from-int-0x80-to-syscall-e133bb5c151a)
+Since the Linux Kernel 2.6, it supports the syscall instruction instead of doing an interrupt 128 (0x80) for syscalls. You can [read more here](https://medium.com/@sachinrajakaruna95/exploring-the-evolution-of-system-call-mechanisms-in-linux-from-int-0x80-to-syscall-e133bb5c151a)
 :::
 
 ## Brief summary {.smaller}

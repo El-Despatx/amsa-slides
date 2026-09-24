@@ -36,7 +36,7 @@ On this activity you are going to build your own simplified version of `htop` by
 
 ## 2. Delivery
 
-*Accept the assignment in Github Classroom, [following the link](https://classroom.github.com/a/BwZznF7h)*
+_Fork the template of the assignment in Github, following the [link](https://github.com/amsa-26-27-lleida/amsatop-template)_
 
 To complete this activity, you must do the following for each sub-delivery (PRAC-2.1, 2.2 and 2.3):
 
@@ -241,7 +241,7 @@ sudo apt update && sudo apt install libfuse2t64
 
 ### Cloning the repository and set it up:
 
-Remember that, once you entered the Github Classroom on [section 2](act-2.qmd#delivery), you will have to clone your repository with [^2]:
+Remember that, once you forked the Github repository on [section 2](act-2.qmd#delivery), you will have to clone your repository with [^2]:
 
 [^2]: If you don't have any idea of what we're talking about, revisit the [setting up the VM and brief git summary](/resources/vm_git.qmd)
 
