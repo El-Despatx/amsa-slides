@@ -281,35 +281,6 @@ $$
 \text{mask} = 2^{N-1}
 $$
 
-
-::: {.callout-tip title="Example: Using a bitmask in Python"}
-
-```python
-number = 11 # Value of the bitmap
-mask   = 4  # We want to check the second bit
-
-result = number & mask
-
-if result != 0:
-    print("The bit is set to 1!")
-else:
-    print("The bit is set to 0!")
-```
-
-The `&` operator compares each bit:
-
-```text
-  1011   (number)
-& 0010   (mask)
-------
-  0010   (result)
-```
-
-If the result is **not zero**, the bit we're checking is set to `1`.
-
-:::
-
-
 ##### Step 3: Using the mask to check the signal
 
 Now that we have our mask, we are going to use the **bitwise AND operator (`&`)**.
@@ -345,7 +316,36 @@ The important thing to remember:
 - If `SigIgn & mask` is **not zero**, the signal IS ignored.
 :::
 
-##### Step 5: Applying this to PRAC-2.3
+::: {.callout-tip title="Example: Using a bitmask in Python"}
+
+```python
+number = 11 # Value of the bitmap
+mask   = 4  # We want to check the second bit
+
+result = number & mask
+
+if result != 0:
+    print("The bit is set to 1!")
+else:
+    print("The bit is set to 0!")
+```
+
+The `&` operator compares each bit:
+
+```text
+  1011   (number)
+& 0010   (mask)
+------
+  0010   (result)
+```
+
+If the result is **not zero**, the bit we're checking is set to `1`.
+
+:::
+
+
+
+##### Step 4: Applying this to PRAC-2.3
 
 Your task is to use this idea to filter the processes obtained in PRAC-2.2, returning **only the processes that ignore SIGHUP**.
 
@@ -354,6 +354,7 @@ Your task is to use this idea to filter the processes obtained in PRAC-2.2, retu
 
 - `SigIgn` tells us which signals are **ignored**.
 - `SigCgt` tells us which signals have a **custom handler**.
+:::
 
 For PRAC-2.3, we only care about `SigIgn`.
 
