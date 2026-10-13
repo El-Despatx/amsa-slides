@@ -191,35 +191,171 @@ Implement [the get_hup method](https://github.com/El-Despatx/amsatop-template/bl
 
 #### Hints about detecting signals
 
-One of the files inside the process `/proc/{pid}` has a `SigIgn` (signal ignore) field which shows the set of signals the process is currently ignoring. Retrieving this information works in much the same way as checking whether a PID/TID corresponds to a kernel thread (by examining and interpreting bitmasks).
 
-The field SigIgn is represented as an hexadecimal number. Since it has 16 hex Characters, it means it represents 8 bytes (which are 64 bits).
 
-The first 32 bits aren't used (for future signal extensions), and the last 32 are a bitmap encoding (each one represents one signal).
 
-This means that:
 
-- The last bit corresponds to the first signal. So signal 1 bit is: (0000 0000 0000 0000 0000 0000 0000 00001).
-- The second-last bit corresponds to the second signal. So signal 2 bit is: (0000 0000 0000 0000 0000 0000 0000 00010).
-- The third-last bit corresponds to the third signal. So signal 3 bit is: (0000 0000 0000 0000 0000 0000 0000 00100).
-- Etc.
 
-So, the mask to detect if the Signal N is ignored, has the following formula:
 
-> mask(N) = 2^(N-1) -> Where N is the signal number.
 
-So:
 
-- If I want to check if the process ignores the signal number 1, I can apply the (&1) mask (...00000001 on binary)
-- If I want to check if the process ignores the signal number 2, I can apply the (&2) mask (...00000010 on binary)
-- If I want to check if the process ignores the signal number 3, I can apply the (&4) mask (...00000100 on binary)
-- If I want to check if the process ignores the signal number 4, I can apply the (&8) mask (...00001000 on binary)
-- Etc.
 
-Be aware that if the result of SIG_IGN & mask:
+As we've seen in class, processes can **ignore signals**. But how can we find out which signals a process is ignoring?
 
-- Is zero: Means that the signal is not ignored (the mask isn't matching...).
-- Is not equal to zero (technically, it should match the mask): This indicates that the signal is ignored.
+Lukily, Linux gives us this information!
+
+One of the files inside the process /proc/{pid} has a SigIgn (signal ignore) field which shows the set of signals the process is currently ignoring. Retrieving this information works in much the same way as checking whether a PID/TID corresponds to a kernel thread (by examining and interpreting bitmasks). This field could be for example:
+
+```text
+SigIgn: 0000000000000005
+```
+
+This might look like a strange number, but it's actually quite simple!
+
+##### Step 1: Understanding `SigIgn`
+
+`SigIgn` is a **bitmap represented in hexadecimal**.
+
+A bitmap is just a binary number where **each bit represents something different**.
+
+In our case, each bit represents one signal:
+
+- `1` means the signal is being ignored.
+- `0` means the signal is NOT being ignored.
+
+The bits correspond to signal numbers, **counting from right to left**:
+
+```text
+Signal:  8 7 6 5 4 3 2 1
+         | | | | | | | |
+Binary:  0 0 0 0 0 1 0 1
+```
+
+In this example:
+
+- Signal 1 (`SIGHUP`) is ignored.
+- Signal 2 (`SIGINT`) is NOT ignored.
+- Signal 3 (`SIGQUIT`) is ignored.
+
+::: {.callout-note}
+Remember that `SigIgn` is written in **hexadecimal**, not binary!
+
+For example, hexadecimal `5` is `101` in binary. The zeros on the left don't change the number.
+:::
+
+##### Step 2: How do we check a specific signal?
+
+Imagine that we want to know whether **signal 3** is ignored.
+
+We could convert `SigIgn` into binary and look at the third bit from the right.
+
+But there's an easier way to do this in Python: **using a mask**!
+
+A mask is simply another binary number that has a `1` in the position we want to check, and `0` everywhere else.
+
+For example:
+
+```text
+Signal:  8 7 6 5 4 3 2 1
+         | | | | | | | |
+Mask:    0 0 0 0 0 1 0 0
+```
+
+Since we're interested in signal 3, our mask is `00000100`, which is **4 in decimal**.
+
+How can we calculate the mask for any signal?
+
+Notice this pattern:
+
+| Signal number | Mask in binary | Mask in decimal |
+|---------------|----------------|-----------------|
+| 1             | 00000001       | 1               |
+| 2             | 00000010       | 2               |
+| 3             | 00000100       | 4               |
+| 4             | 00001000       | 8               |
+| 5             | 00010000       | 16              |
+
+Every time we move one position to the left, the value doubles. Therefore, we can calculate the mask for signal number `N` with:
+
+$$
+\text{mask} = 2^{N-1}
+$$
+
+
+::: {.callout-tip title="Example: Using a bitmask in Python"}
+
+```python
+number = 11 # Value of the bitmap
+mask   = 4  # We want to check the second bit
+
+result = number & mask
+
+if result != 0:
+    print("The bit is set to 1!")
+else:
+    print("The bit is set to 0!")
+```
+
+The `&` operator compares each bit:
+
+```text
+  1011   (number)
+& 0010   (mask)
+------
+  0010   (result)
+```
+
+If the result is **not zero**, the bit we're checking is set to `1`.
+
+:::
+
+
+##### Step 3: Using the mask to check the signal
+
+Now that we have our mask, we are going to use the **bitwise AND operator (`&`)**.
+
+This operator compares two binary numbers, bit by bit. The result has a `1` only in positions where **both numbers have a `1`**.
+
+Let's try it with our example:
+
+```text
+SigIgn:  0 0 0 0 0 1 0 1    (5)
+Mask:    0 0 0 0 0 1 0 0    (4)
+         -----------------
+Result:  0 0 0 0 0 1 0 0    (4)
+```
+
+The result is **4**, which means that the bit corresponding to signal 3 was set to `1`, so **signal 3 is ignored**.
+
+What if we check signal 2 instead?
+
+```text
+SigIgn:  0 0 0 0 0 1 0 1    (5)
+Mask:    0 0 0 0 0 0 1 0    (2)
+         -----------------
+Result:  0 0 0 0 0 0 0 0    (0)
+```
+
+The result is **0**, meaning signal 2 is NOT ignored.
+
+::: {.callout-tip}
+The important thing to remember:
+
+- If `SigIgn & mask` is **zero**, the signal is NOT ignored.
+- If `SigIgn & mask` is **not zero**, the signal IS ignored.
+:::
+
+##### Step 5: Applying this to PRAC-2.3
+
+Your task is to use this idea to filter the processes obtained in PRAC-2.2, returning **only the processes that ignore SIGHUP**.
+
+::: {.callout-important}
+**Ignoring a signal is NOT the same as handling it!**
+
+- `SigIgn` tells us which signals are **ignored**.
+- `SigCgt` tells us which signals have a **custom handler**.
+
+For PRAC-2.3, we only care about `SigIgn`.
 
 Keep in mind that [each signal corresponds to a number...](https://faculty.cs.niu.edu/~hutchins/csci480/signals.htm)
 

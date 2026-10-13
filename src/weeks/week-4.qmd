@@ -76,10 +76,10 @@ Create a file named `amsa.py` and paste the code. Naming the file this way will 
 -   Find out the PID of the process and run `kill -KILL <PID>`, watch what happens with the python program.
 
 ::: {.callout-tip .fragment}
-Use `ps aux | grep amsa` to easily find the PID
+Use `ps -af | grep amsa` to easily find the PID
 
 ``` {.shell code-line-numbers="false"}
-amsa@amsa:~$ ps aux | grep amsa
+amsa@amsa:~$ ps -af | grep amsa
 fnao       42419  0.1  0.0  18952  9964 pts/1    S+   11:29   0:00 python3 amsa.py
 fnao       42525  0.0  0.0   7300  2288 pts/4    S+   11:29   0:00 grep --color=auto amsa
 ```
@@ -166,7 +166,7 @@ if __name__ == "__main__":
 
 -   Run the python program and open a separate terminal.
 
--   Get the PID of the program with `ps aux | grep amsa`.
+-   Get the PID of the program with `ps -af | grep amsa`.
 
 -   Which command are we going to use now for sending `SIGUSR1` to our python program?
 
@@ -179,7 +179,7 @@ Remember the syscall is always `kill()` no matter which signal are we sending. I
 <br>
 
 ``` {.shell code-line-numbers="1-4|4"}
-fnao@fnao-phd-energy:~$ ps aux | grep amsa.py
+fnao@fnao-phd-energy:~$ ps -af | grep amsa.py
 fnao       42471  0.3  0.0  18952  9972 pts/2    S+   10:50   0:00 python3 amsa.py
 fnao       42491  0.0  0.0   7304  2292 pts/3    S+   10:50   0:00 grep --color=auto amsa.py
 fnao@fnao-phd-energy:~$ kill -USR1 42471
