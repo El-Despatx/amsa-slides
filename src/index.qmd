@@ -15,14 +15,16 @@ Welcome to **AMSA 2026-2027**, here you’ll find all the lecture slides and res
 -   [Week 2: Linux syscalls, processes and ProcFS + PRAC 2.1](weeks/week-2.qmd)
 -   [Week 3: Scheduling and nice + PRAC 2.2](weeks/week-3.qmd)
 -   [Week 4: Communicating processes + PRAC 2.3](weeks/week-4.qmd)
-<!-- -   [Week 5: Memory Layout and Swap + PRAC 3.1](weeks/week-5.qmd)
--   [Week 6: Users, permissions and quotas + PRAC 3.2](weeks/week-6.qmd)
--   [Week 7: RAM disks and tmpfs + PRAC 3.3](weeks/week-7.qmd)
+-   [Week 5: Memory Layout and Swap + PRAC 3.1](weeks/week-5.qmd)
+-   [Week 5: Users, permissions and quotas + PRAC 3.2](weeks/week-6.qmd)
+-   [Week 5: RAM disks and tmpfs + PRAC 3.3](weeks/week-7.qmd)
+<!-- 
 -   [Week 9: Virtualization 101](weeks/week-9.qmd)
 -   [Week 10: Dockerfile & DockerHub](weeks/week-10.qmd)
 -   [Week 11: Docker Compose: Orchestrating containers](weeks/week-11.qmd)
 -   [Week 12: AWS Intro and services](weeks/week-12.qmd)
--   [Week 13: AWS RDS](weeks/week-13.qmd) -->
+-   [Week 13: AWS RDS](weeks/week-13.qmd)
+-->
 
 ## 📝 Activities
 
@@ -30,8 +32,8 @@ In the following links you'll find all the activities and its corresponding reso
 
 -   [Activity 1: Booting & systemd](activities/act-1.qmd)
 -   [Activity 2: Creating our own htop!](activities/act-2.qmd)
-<!-- -   [Activity 3: SWAP, tmpfs & Quotas](activities/act-3.qmd)
--   [Activity 4: Docker & AWS](activities/act-4.qmd) -->
+-   [Activity 3: SWAP, tmpfs & Quotas](activities/act-3.qmd)
+<!-- -   [Activity 4: Docker & AWS](activities/act-4.qmd) -->
 
 ## 🤓 Extras
 
