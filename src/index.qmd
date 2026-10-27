@@ -56,6 +56,9 @@ Having said that, we encourage you to give it a try and show us the results, we'
 
 ## 📚 Resources
 
+-   [November Simulation Exam and Notes](resources/exam.md)
+-   [November 2025 exam](resources/exams/november/2025.md)
+-   [November 2025 retake exam](resources/exams/november/2025-retake.md)
 -   [Guia docent](https://guiadocent.udl.cat/html/2026-27_102013)
 -   [Setting up the subject's virtual machine and git brief](resources/vm_git.qmd)
 -   [Python Resources for Beginners](resources/python.qmd)

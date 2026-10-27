@@ -5,6 +5,7 @@ project:
 website:
   title: "AMSA 2026-2027"
   favicon: "favicon.ico"
+  search: false
   navbar:
     left:
       - text: "🎓 Slides"
@@ -72,6 +73,14 @@ website:
         #   text: "Week 12"
         # - href: weeks/week-13.qmd#extra
         #   text: "Week 13"
+      - text: "📚 Resources"
+        menu:
+        - href: resources/exam.qmd
+          text: "November Exam Simulation and Notes"
+        - href: resources/exams/november/2025.md
+          text: "November 2025 Exam"
+        - href: resources/exams/november/2025-retake.md
+          text: "November 2025 Retake Exam"
 
 title: "AMSA"
 
