@@ -81,6 +81,14 @@ website:
           text: "November 2025 Exam"
         - href: resources/exams/november/2025-retake.md
           text: "November 2025 Retake Exam"
+        - href: https://guiadocent.udl.cat/html/2026-27_102013
+          text: "Guia docent"
+        - href: resources/vm_git.qmd
+          text: "Setting up the subject's virtual machine and git brief"
+        - href: resources/python.qmd
+          text: "Python Resources for Beginners"
+        - href: https://lleida.amsa.udl.cat/docs
+          text: "AMSATOP Documentation"
 
 title: "AMSA"
 
