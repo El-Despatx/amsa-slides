@@ -75,12 +75,12 @@ website:
         #   text: "Week 13"
       - text: "📚 Resources"
         menu:
-        - href: resources/exam.qmd
-          text: "November Exam Simulation and Notes"
-        - href: resources/exams/november/2025.md
-          text: "November 2025 Exam"
-        - href: resources/exams/november/2025-retake.md
-          text: "November 2025 Retake Exam"
+        # - href: resources/exam.qmd
+        #   text: "November Exam Simulation and Notes"
+        # - href: resources/exams/november/2025.md
+        #   text: "November 2025 Exam"
+        # - href: resources/exams/november/2025-retake.md
+        #   text: "November 2025 Retake Exam"
         - href: https://guiadocent.udl.cat/html/2026-27_102013
           text: "Guia docent"
         - href: resources/vm_git.qmd
